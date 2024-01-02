@@ -1,0 +1,55 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(6, 53, 6);
+  width: 100vw;
+  height: 100vh;
+  color: green;
+  padding: 0 2em; /* responsive */
+  font-family: sans-serif;
+}
+
+#quote-box {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  padding: 2rem;
+  border-radius: 0.5em;
+  font-size: clamp(1rem, 4vw, 1.5rem); /* responsive */
+  font-weight: bold;
+  max-width: 38rem; /* responsive */
+  max-height: 35rem; /* responsive */
+}
+
+#author {
+  align-self: flex-end;
+  font-weight: normal;
+  font-size: clamp(0.8rem, 3vw, 1.2rem); /* responsive */
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#tweet-quote,
+#new-quote {
+  cursor: pointer;
+  min-height: clamp(1.5rem, 5vw, 2rem); /* responsive */
+}
+
+#tweet-quote {
+  color: white;
+  background-color: rgba(65, 125, 229, 0.915);
+  padding: 0.5rem 0.8rem;
+  border-radius: 0.2rem;
+}
+
+
+#coder {
+  margin-top: 1rem;
+  color: white;
+  font-size: clamp(0.8rem, 1vw, 1.2rem); /* responsive */
+}
