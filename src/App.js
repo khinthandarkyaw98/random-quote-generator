@@ -12,7 +12,7 @@ import { faTwitter, faTumblr } from
 
 function App() {
   const [quote, setQuote] = useState({});
-  const [color, setColor] = useState('#fff');
+  const [color, setColor] = useState('#888899');
 
   useEffect(() => {
     handleQuote();
@@ -24,9 +24,9 @@ function App() {
   }
 
   const getColor = () => {
-    let color = '#' + Math.floor(Math.random() * 888899).toString();
+    let colorCode = '#' + Math.floor(Math.random() * 888899).toString();
     //let color = randomColor();
-    setColor(color);
+    setColor(colorCode);
     document.getElementById('App').style.backgroundColor = color;
     document.getElementById('text').style.color = color;
     document.getElementById('author').style.color = color;
